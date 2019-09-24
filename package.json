@@ -1,0 +1,23 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "crawler.js",
+  "dependencies": {
+    "crawler": "^1.2.1",
+    "firebase": "^6.6.2",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.15",
+    "npm-windows-upgrade": "^6.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

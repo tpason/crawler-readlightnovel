@@ -1,0 +1,249 @@
+[debug] [2019-09-24T07:15:23.161Z] ----------------------------------------------------------------------
+[debug] [2019-09-24T07:15:23.162Z] Command:       /usr/bin/node /usr/bin/firebase login
+[debug] [2019-09-24T07:15:23.163Z] CLI Version:   7.3.2
+[debug] [2019-09-24T07:15:23.163Z] Platform:      linux
+[debug] [2019-09-24T07:15:23.163Z] Node Version:  v10.15.3
+[debug] [2019-09-24T07:15:23.167Z] Time:          Tue Sep 24 2019 14:15:23 GMT+0700 (Indochina Time)
+[debug] [2019-09-24T07:15:23.167Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again.
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=273108549&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2019-09-24T07:16:25.277Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+
+[debug] [2019-09-24T07:16:25.509Z] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Success! Logged in as tpason529@gmail.com
+[debug] [2019-09-24T07:16:25.749Z] Error: ETXTBSY: text file is busy, unlink '/home/admin-pm/crawler/firebase-debug.log'
+    at Object.unlinkSync (fs.js:951:3)
+    at process.<anonymous> (/usr/lib/node_modules/firebase-tools/lib/bin/firebase.js:68:12)
+    at process.emit (events.js:194:15)
+    at process.topLevelDomainCallback (domain.js:120:23)
+[debug] [2019-09-24T07:16:49.365Z] ----------------------------------------------------------------------
+[debug] [2019-09-24T07:16:49.367Z] Command:       /usr/bin/node /usr/bin/firebase list
+[debug] [2019-09-24T07:16:49.367Z] CLI Version:   7.3.2
+[debug] [2019-09-24T07:16:49.367Z] Platform:      linux
+[debug] [2019-09-24T07:16:49.367Z] Node Version:  v10.15.3
+[debug] [2019-09-24T07:16:49.368Z] Time:          Tue Sep 24 2019 14:16:49 GMT+0700 (Indochina Time)
+[debug] [2019-09-24T07:16:49.368Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-24T07:16:49.373Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-24T07:16:49.373Z] > authorizing via signed-in user
+[warn] This command is deprecated. Instead, use 'firebase projects:list' command to list your projects.
+[debug] [2019-09-24T07:16:49.374Z] [WARNING] Error: getProjects() is deprecated - update the implementation
+    at Object.getProjects (/usr/lib/node_modules/firebase-tools/lib/api.js:185:35)
+    at Command._action (/usr/lib/node_modules/firebase-tools/lib/commands/list.js:14:16)
+    at /usr/lib/node_modules/firebase-tools/lib/command.js:163:37
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+[debug] [2019-09-24T07:16:49.390Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-09-24T07:16:49.390Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-09-24T07:16:49.650Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-24T07:16:49.671Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2019-09-24T07:16:50.916Z] <<< HTTP RESPONSE 200
+[info] ┌───────────────────┬───────────────────────┬─────────────┐
+│ Name              │ Project ID / Instance │ Permissions │
+├───────────────────┼───────────────────────┼─────────────┤
+│ crawlerLightNovel │ crawlerlightnovel     │ Owner       │
+├───────────────────┼───────────────────────┼─────────────┤
+│ quiz              │ quiz-a8d22            │ Owner       │
+└───────────────────┴───────────────────────┴─────────────┘
+[debug] [2019-09-24T07:16:51.098Z] Error: ETXTBSY: text file is busy, unlink '/home/admin-pm/crawler/firebase-debug.log'
+    at Object.unlinkSync (fs.js:951:3)
+    at process.<anonymous> (/usr/lib/node_modules/firebase-tools/lib/bin/firebase.js:68:12)
+    at process.emit (events.js:194:15)
+    at process.topLevelDomainCallback (domain.js:120:23)
+[debug] [2019-09-24T07:17:21.863Z] ----------------------------------------------------------------------
+[debug] [2019-09-24T07:17:21.864Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2019-09-24T07:17:21.865Z] CLI Version:   7.3.2
+[debug] [2019-09-24T07:17:21.865Z] Platform:      linux
+[debug] [2019-09-24T07:17:21.865Z] Node Version:  v10.15.3
+[debug] [2019-09-24T07:17:21.865Z] Time:          Tue Sep 24 2019 14:17:21 GMT+0700 (Indochina Time)
+[debug] [2019-09-24T07:17:21.865Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-24T07:17:21.870Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-24T07:17:21.870Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/admin-pm/crawler
+
+[error] 
+[error] Error: Must select at least one feature. Use SPACEBAR to select features, or provide a feature with firebase init [feature_name]
+[debug] [2019-09-24T07:17:48.419Z] Error: ETXTBSY: text file is busy, unlink '/home/admin-pm/crawler/firebase-debug.log'
+    at Object.unlinkSync (fs.js:951:3)
+    at process.<anonymous> (/usr/lib/node_modules/firebase-tools/lib/bin/firebase.js:68:12)
+    at process.emit (events.js:194:15)
+    at processEmit [as emit] (/usr/lib/node_modules/firebase-tools/node_modules/signal-exit/index.js:149:35)
+    at process.exit (internal/process/per_thread.js:168:15)
+    at Timeout._onTimeout (/usr/lib/node_modules/firebase-tools/lib/errorOut.js:14:17)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-09-24T07:18:06.533Z] ----------------------------------------------------------------------
+[debug] [2019-09-24T07:18:06.535Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2019-09-24T07:18:06.535Z] CLI Version:   7.3.2
+[debug] [2019-09-24T07:18:06.535Z] Platform:      linux
+[debug] [2019-09-24T07:18:06.535Z] Node Version:  v10.15.3
+[debug] [2019-09-24T07:18:06.535Z] Time:          Tue Sep 24 2019 14:18:06 GMT+0700 (Indochina Time)
+[debug] [2019-09-24T07:18:06.535Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-24T07:18:06.540Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-24T07:18:06.540Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/admin-pm/crawler
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2019-09-24T07:18:35.181Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2019-09-24T07:18:36.092Z] <<< HTTP RESPONSE 200
+[info] i  Using project crawlerlightnovel (crawlerLightNovel)
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2019-09-24T07:18:40.102Z] >>> HTTP REQUEST GET https://crawlerlightnovel.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2019-09-24T07:18:41.223Z] <<< HTTP RESPONSE 200
+[info] ✔  Database Rules for crawlerlightnovel have been downloaded to database.rules.json.
+[info] Future modifications to database.rules.json will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[error] 
+[error] Error: Cloud resource location is not set for this project but the operation you are attempting to perform in Cloud Firestore requires it. Please see this documentation for more details: https://firebase.google.com/docs/projects/locations
+[debug] [2019-09-24T07:18:41.667Z] Error: ETXTBSY: text file is busy, unlink '/home/admin-pm/crawler/firebase-debug.log'
+    at Object.unlinkSync (fs.js:951:3)
+    at process.<anonymous> (/usr/lib/node_modules/firebase-tools/lib/bin/firebase.js:68:12)
+    at process.emit (events.js:194:15)
+    at processEmit [as emit] (/usr/lib/node_modules/firebase-tools/node_modules/signal-exit/index.js:149:35)
+    at process.exit (internal/process/per_thread.js:168:15)
+    at Timeout._onTimeout (/usr/lib/node_modules/firebase-tools/lib/errorOut.js:14:17)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-09-24T07:21:33.545Z] ----------------------------------------------------------------------
+[debug] [2019-09-24T07:21:33.550Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2019-09-24T07:21:33.550Z] CLI Version:   7.3.2
+[debug] [2019-09-24T07:21:33.550Z] Platform:      linux
+[debug] [2019-09-24T07:21:33.550Z] Node Version:  v10.15.3
+[debug] [2019-09-24T07:21:33.551Z] Time:          Tue Sep 24 2019 14:21:33 GMT+0700 (Indochina Time)
+[debug] [2019-09-24T07:21:33.551Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-24T07:21:33.561Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-24T07:21:33.561Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/admin-pm/crawler
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2019-09-24T07:21:55.506Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2019-09-24T07:21:56.429Z] <<< HTTP RESPONSE 200
+[info] i  Using project crawlerlightnovel (crawlerLightNovel)
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2019-09-24T07:22:10.640Z] >>> HTTP REQUEST GET https://crawlerlightnovel.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2019-09-24T07:22:11.653Z] <<< HTTP RESPONSE 200
+[info] ✔  Database Rules for crawlerlightnovel have been downloaded to database.rules.json.
+[info] Future modifications to database.rules.json will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[error] 
+[error] Error: Cloud resource location is not set for this project but the operation you are attempting to perform in Cloud Firestore requires it. Please see this documentation for more details: https://firebase.google.com/docs/projects/locations
+[debug] [2019-09-24T07:22:12.108Z] Error: ETXTBSY: text file is busy, unlink '/home/admin-pm/crawler/firebase-debug.log'
+    at Object.unlinkSync (fs.js:951:3)
+    at process.<anonymous> (/usr/lib/node_modules/firebase-tools/lib/bin/firebase.js:68:12)
+    at process.emit (events.js:194:15)
+    at processEmit [as emit] (/usr/lib/node_modules/firebase-tools/node_modules/signal-exit/index.js:149:35)
+    at process.exit (internal/process/per_thread.js:168:15)
+    at Timeout._onTimeout (/usr/lib/node_modules/firebase-tools/lib/errorOut.js:14:17)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-09-24T07:22:57.410Z] ----------------------------------------------------------------------
+[debug] [2019-09-24T07:22:57.415Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2019-09-24T07:22:57.415Z] CLI Version:   7.3.2
+[debug] [2019-09-24T07:22:57.416Z] Platform:      linux
+[debug] [2019-09-24T07:22:57.416Z] Node Version:  v10.15.3
+[debug] [2019-09-24T07:22:57.416Z] Time:          Tue Sep 24 2019 14:22:57 GMT+0700 (Indochina Time)
+[debug] [2019-09-24T07:22:57.416Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-24T07:22:57.424Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-24T07:22:57.424Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/admin-pm/crawler
+
+[debug] [2019-09-24T07:25:16.873Z] Error: ETXTBSY: text file is busy, unlink '/home/admin-pm/crawler/firebase-debug.log'
+    at Object.unlinkSync (fs.js:951:3)
+    at process.<anonymous> (/usr/lib/node_modules/firebase-tools/lib/bin/firebase.js:68:12)
+    at process.emit (events.js:194:15)
+    at processEmit [as emit] (/usr/lib/node_modules/firebase-tools/node_modules/signal-exit/index.js:149:35)
+    at process.topLevelDomainCallback (domain.js:120:23)
